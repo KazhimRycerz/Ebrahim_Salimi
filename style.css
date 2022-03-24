@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FoundSanExpMed;
+}
+
+@font-face {
+  font-family: "VIA-Verlag";
+  src: url("../../fonts/VIA-Verlag.woff2") format("woff2"), url("../../fonts/VIA-Verlag.otf") format("otf");
+}
+@font-face {
+  font-family: "BillboardShadow";
+  src: url("../fonts/Billboard-Shadow.otf") format("otf");
+}
+@font-face {
+  font-family: "FoundSanExpMed";
+  src: url("../../PLDCPD/src/fonts/FOUSANMD.woff2") format("woff2"), url("../../PLDCPD/src/fonts/FOUSANMD.otf") format("otf");
+}
+@font-face {
+  font-family: "Carbono";
+  src: url("../../fonts/carbono/carbono.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Vacaciones";
+  src: url("../../fonts/vacaciones-outline/Vacaciones-font-ffp-defharo.otf") format("otf"), url("../../fonts/vacaciones-outline/Vacaciones-font-ffp-defharo.woff2") format("woff2");
+}
+@font-face {
+  font-family: "CorporateDemi";
+  src: url("../../fonts/CorporateSTOT-Dem.otf") format("otf");
+}
+@font-face {
+  font-family: "CorporateReg";
+  src: url("../../fonts/CorporateSTOT-Reg.otf") format("otf");
+}
+@font-face {
+  font-family: "FallingSkyOu";
+  src: url("../../fonts/Falling-Sky-Condensed-Outline/FallingSkyOu.woff2") format("woff2"), url("../../fonts/Falling-Sky-Condensed-Outline/FallingSkyOu.otf") format("otf");
+}
+@font-face {
+  font-family: "ChalkLine";
+  src: url("../../fonts/chalk_line_outline/ChalkLine-Outline.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Rampart";
+  src: url("../../fonts/Rampart_One/RampartOne-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Thunderlord";
+  src: url("../../fonts/thunder_lord/Thunder Lord.woff2") format("woff2"), url("../../fonts/thunder_lord/Thunder Lord.ttf") format("ttf");
+}
+@font-face {
+  font-family: "FoundSanExpNorm";
+  src: url("../../fonts/FOUSANNO.woff2") format("woff2"), url("../fonts/FOUSANNO.otf") format("otf");
+}
+@font-face {
+  font-family: "FoundSanBd";
+  src: url("../../fonts/FOUSANBD.woff2") format("woff2"), url("../fonts/FOUSANBD.otf") format("otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --var(textcolor rgb(235, 215, 200));
+
+}
+
+body {
+    background-image: url(../../PLDCPD/src/images/Wallpaper_05.JPG);
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(68, 107, 173, 50%);
+    color: rgb(235, 215, 200);
+    font-family: FoundSanExpMed, sans-serif;
+    
+}
+
+nav {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    background-image: rgb(240, 255, 255);
+    background-image: linear-gradient(45deg, rgba(83,221,242,0) 0%, rgba(242,48,48,0) 100%);
+    
+}
+nav img {
+    width: 100px;
+    object-fit: cover;
+    size: 1.20;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-position: 0;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul li {
+    list-style-type:none;
+    background-color: none;
+    color: rgb(235, 215, 200);
+   
+
+}
+
+li:hover {
+ /* box-shadow: 0.5rem 0.5rem 2rem; */
+ text-shadow: 3px 5px 5px  rgb(235, 215, 200);
+}
+
+
+
+
+main {
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+main div {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(68, 107, 173, 50%);
+}
+
+main div p {
+    margin-left: 20px;
+    position: absolute;
+    left: 20%;
+}
+
+
+
+@keyframes rotate_ebi {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+    animation: rotate_ebi 10s infinite linear;
+    /* position: relative;
+    left: 605px;
+    top: 240px;
+    width: 420px; */
+
+  }
+
+
+
+footer {
+width: 20%;
+height: 200px;
+background-color: rgba(68, 107, 173, 50%);
+}
+
+footer p {
+    margin: 0 0 20px 20px;
+    color: rgb(235, 215, 200);
+}
+
+
+footer>ul {
+display: flex;
+flex-flow: row nowrap;
+margin: 0 0 20px 20px;
+
+}
+
+footer>ul>li {
+    list-style-type: none;
+    font-size: 26px;
+}
+
+footer>ul>li>a {
+    color: rgb(235, 215, 200);
+}
+footer img {
+  width: 30px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
