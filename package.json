@@ -1,0 +1,37 @@
+{
+  "name": "ebrahim_salimi",
+  "version": "1.0.0",
+  "description": "![Ebi](src/images/Ebrahim_Salimi.jpg) Personal website engineer Ebrahim Salimi Ebrahim Salimi is a Civil engineer from Iran, starting to study in Essen from 2022. The website is planned to show his capibilities in construction and his skills. The first phase of his site showvan afternoon work.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p sass-watch server",
+    "sass-watch": "sass src/scss:src/styles --watch",
+    "sass-build": "sass src/scss:src/styles",
+    "server": "light-server -c light-server.json",
+    "open-browser": "open -a 'Google Chrome' http://127.0.0.1:8080",
+    "clean": "rm -rf dist src/styles",
+    "copy": " mkdir dist && cp -r src/* dist",
+    "build": "run-s clean sass-build copy",
+    "publish": "gh-pages -d dist",
+    "deploy": "run-s build publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazhimRycerz/Ebrahim_Salimi.git"
+  },
+  "keywords": [],
+  "author": "Joachim Ritter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KazhimRycerz/Ebrahim_Salimi/issues"
+  },
+  "homepage": "https://github.com/KazhimRycerz/Ebrahim_Salimi#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "light-server": "^2.9.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
