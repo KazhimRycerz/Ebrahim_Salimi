@@ -1,133 +1,119 @@
-body {
-    background-image: url(./Images/1200px-Fingerprint_picture.png);
-    background-repeat:no-repeat;
-    background-size:50vh;
-    background-color: rgb(213, 168, 89);
-    background-position: 5vw 5vh;
-    
-}
 
-h1 {
-   font-size: 5rem;
-   text-align: center;
-   margin-left: 50vw;
-   margin-top: 3em; 
-   width: 50vw;
-}
-p {
-   text-align: center;
-   font-size: 2rem;
-   margin-left: 50vw;
-   width: 50vw;
+header {
+    padding: 20px;
+    background-color: rgba(68, 107, 173, 50%);
+    color: rgb(235, 215, 200);
+    font-family: FoundSanExpMed, sans-serif;
+    
 }
 
 nav {
-   width: 50%;
-   font-size: 1.5rem;
-   position:relative;
-   text-align: left;
-   top: 3rem;
-   left: 50%;
-   }
-   nav ul {
-       list-style-type: none;
-   }
-
-figure {
     display: flex;
-    justify-content: end;
-    position: relative;
-    right: 200px;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    background-image: rgb(240, 255, 255);
+    background-image: linear-gradient(45deg, rgba(83,221,242,0) 0%, rgba(242,48,48,0) 100%);
     
 }
-
-figure>img {
-    width: 400px;
+nav img {
+    width: 100px;
     object-fit: cover;
+    size: 1.20;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-position: -20px 0px;
+
 }
 
-#fingerlines img {
-    visibility: visible;
-    width: 50vh;
-    position:absolute;
-    top: 5vh; left: 5vw;
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-center;
+    align-items: center;
+    gap: 20px;
 }
 
+ul li {
+    list-style-type:none;
+    background-color: none;
+    color: rgb(235, 215, 200);
+   
 
-
-#first, nav>ul>li:first-child:hover {
-    opacity: 0;
-    animation: fadeinandout 3s infinite ease alternate-reverse;
-    z-index:10;
-    color: white;
 }
 
-#first:hover {
-    opacity: 1;
-    animation-play-state: paused;
-    z-index: 11;
-}
-nav>ul>li:first-child:hover {
-    animation: fadeinandout 3s infinite ease alternate-reverse;
-}
-nav>ul>li:first-child:hover #first {
-    display: block;
-    opacity: 1;
-    animation-play-state: paused;
+li:hover {
+ /* box-shadow: 0.5rem 0.5rem 2rem; */
+ text-shadow: 3px 5px 5px  rgb(235, 215, 200);
 }
 
 
-#second {
-    opacity: 0;
-    animation: fadeinandout 2s infinite ease alternate-reverse;
-    z-index:9;
+
+main {
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+
 }
-#third {
-    opacity: 0;
-    animation: fadeinandout 2.5s infinite ease alternate-reverse;
-    z-index:9;
+main div {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(68, 107, 173, 50%);
 }
-#fourth {
-    opacity: 0;
-    animation: fadeinandout 1.5s infinite ease alternate-reverse;
-    z-index:9;
-}
-#fifth {
-    opacity: 0;
-    animation: fadeinandout 1.3s infinite ease alternate-reverse;
-    z-index:9;
-}
-#sixth {
-    opacity: 0;
-    animation: fadeinandout 3s infinite ease alternate-reverse;
-    z-index:9;
-}
-#seventh {
-    opacity: 0;
-    animation: fadeinandout 1s infinite ease alternate-reverse;
-    z-index:9;
-}
-#eigth {
-    opacity: 0;
-    animation: fadeinandout 2.1s infinite ease alternate-reverse;
-    z-index:9;
-}
-#ninth {
-    opacity: 0;
-    animation: fadeinandout 2.7s infinite ease alternate-reverse;
-    z-index:9;
+
+main div p {
+    margin-left: 20px;
+    position: absolute;
+    left: 20%;
 }
 
 
-@keyframes fadeinandout {
-    0% {
-    opacity: 0;
+@keyframes rotate_ebi {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 
-/* animation-play-state: running;
-animation-play-state: paused;
- */
+.rotate {
+    animation: rotate_ebi 10s infinite linear;
+    /* position: relative;
+    left: 605px;
+    top: 240px;
+    width: 420px; */
+
+  }
+
+
+footer {
+width: 20%;
+height: 200px;
+background-color: rgba(68, 107, 173, 50%);
+}
+
+footer p {
+    margin: 0 0 20px 20px;
+    color: rgb(235, 215, 200);
+}
+
+footer>ul {
+display: flex;
+flex-flow: row nowrap;
+margin: 0 0 20px 20px;
+
+}
+
+footer>ul>li {
+    list-style-type: none;
+    font-size: 26px;
+}
+
+footer>ul>li>a {
+    color: rgb(235, 215, 200);
+}
+footer img {
+  width: 30px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
